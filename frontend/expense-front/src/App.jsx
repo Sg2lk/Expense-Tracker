@@ -1,17 +1,18 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Dashboard from './components/Dashboard';
+import './App.css'
+import Navbar from './components/Navbar';
+
 export default function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-100">
-      <div className="p-8 bg-white rounded-xl shadow-lg text-center">
-        <h1 className="text-3xl font-bold text-blue-600 mb-4">
-          Tailwind Funciona! 🚀
-        </h1>
-        <p className="text-gray-700">
-          Este es un ejemplo rápido para probar tu configuración.
-        </p>
-        <button className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
-          Botón de prueba
-        </button>
+    <BrowserRouter>
+      <div className='min-h-screen bg-gray-900 text-white'>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Navigate to="/dashboard" />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   )
 }

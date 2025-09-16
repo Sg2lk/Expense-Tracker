@@ -25,15 +25,15 @@ export default function () {
         </div>
 
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-yellow-300 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-red-600">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-blue-600 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-blue-600">
             <li>
-              <Link to={'/dashboard'} className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Dashboard</Link>
+              <Link to={'/dashboard'} className="block py-2 px-3 text-white md:text-lg rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-300 md:p-0" aria-current="page">Dashboard</Link>
             </li>
             <li>
-              <Link to={'/add'} className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Add</Link>
+              <Link to={'/add'} className="block py-2 px-3 text-white md:text-lg rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-300 md:p-0">Add</Link>
             </li>
             <li>
-              <Link to={'/stats'} className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Stats</Link>
+              <Link to={'/stats'} className="block py-2 px-3 text-white md:text-lg rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-300 md:p-0">Stats</Link>
             </li>
           </ul>
         </div>

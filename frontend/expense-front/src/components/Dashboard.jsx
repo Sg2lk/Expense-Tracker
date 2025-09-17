@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { getExpenses } from "../api/expenses";
+import React from "react";
+import { useExpenses } from './CreateContext';
 
 export default function Dashboard() {
-  const [expenses, setExpenses] = useState([]);
+  const { expenses, loading } = useExpenses();
 
-  const fetchExpenses = async () => {
-    const data = await getExpenses();
-    // console.log(data)
-    setExpenses(data);
-  };
-
-  useEffect(() => {
-    fetchExpenses();
-  }, []);
+  if (loading) return <p className="p-5 text-gray-300">Cargando gastos...</p>;
 
   return (
     <div className="p-5 bg-gray-900">
@@ -37,12 +29,12 @@ export default function Dashboard() {
                 <td className="py-2 px-4 text-center">{expense.amount}</td>
                 <td className="py-2 px-4 text-center">{expense.category}</td>
                 <td className="py-2 px-4 text-center">
-                  {new Date(expense.date).toLocaleString('es-ES', {
-                    day: '2-digit',
-                    month: 'short',
-                    year: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
+                  {new Date(expense.date).toLocaleString("es-ES", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
                   })}
                 </td>
               </tr>

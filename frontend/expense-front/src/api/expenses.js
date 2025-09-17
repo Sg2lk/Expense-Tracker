@@ -11,3 +11,15 @@ export const getExpenses = async () => {
     return [];
   }
 };
+
+export const addExpense = async (expense) => {
+  try {
+    const response = await axios.post(`${API_URL}/expenses/`, expense, {
+      headers: { "Content-Type": "application/json" },
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error adding expense:", error);
+    throw error;
+  }
+};

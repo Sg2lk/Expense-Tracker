@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { getExpenses } from "../api/expenses"; // ajusta la ruta si hace falta
+import { getExpenses } from "../api/expenses";
 
 export default function Dashboard() {
   const [expenses, setExpenses] = useState([]);
 
-  // Traer los datos al montar el componente
+  const fetchExpenses = async () => {
+    const data = await getExpenses();
+    // console.log(data)
+    setExpenses(data);
+  };
+
   useEffect(() => {
-    const fetchExpenses = async () => {
-      const data = await getExpenses();
-      console.log(data)
-      setExpenses(data);
-    };
     fetchExpenses();
   }, []);
 
   return (
-    <div className="p-4 bg-gray-900 min-h-screen">
+    <div className="p-5 bg-gray-900">
       {expenses.length === 0 ? (
         <p className="text-gray-300">No expenses found.</p>
       ) : (
-        <table className="w-full bg-gray-800 text-gray-200 rounded-lg overflow-hidden shadow-md mt-12">
+        <table className="w-full bg-gray-800 text-gray-200 rounded-lg shadow-md mt-12">
           <thead className="bg-gray-700">
             <tr>
               <th className="py-2 px-4 text-center">ID</th>
@@ -31,7 +31,7 @@ export default function Dashboard() {
           </thead>
           <tbody>
             {expenses.map((expense) => (
-              <tr key={expense.id} className="border-b border-gray-600">
+              <tr key={expense.id} className="border-b border-gray-900">
                 <td className="py-2 px-4 text-center">{expense.id}</td>
                 <td className="py-2 px-4 text-center">{expense.title}</td>
                 <td className="py-2 px-4 text-center">{expense.amount}</td>

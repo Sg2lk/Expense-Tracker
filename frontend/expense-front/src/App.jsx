@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Dashboard from './components/Dashboard';
 import './App.css'
 import Navbar from './components/Navbar';
+import Add from './components/Add';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/add" element={<Add />} />
         </Routes>
       </div>
     </BrowserRouter>

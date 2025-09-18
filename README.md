@@ -3,6 +3,7 @@
 Aplicación full-stack para gestionar y visualizar gastos personales.  
 Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de datos)**.
 
+
 ## 🚀 Características principales
 
 - ✨ **Dashboard interactivo**: listado de todos los gastos registrados.  
@@ -11,7 +12,8 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 - 📈 **Estadísticas visuales**: gráficos interactivos (categorías y gastos diarios) con **Recharts**.  
 - 🗄 **API REST con FastAPI**: endpoints para crear y consultar gastos.  
 - 💾 **Persistencia en SQLite**: almacenamiento local sencillo y ligero.  
-- 🎨 **Interfaz moderna**: diseñada con Tailwind CSS para un estilo limpio y responsive.  
+- 🎨 **Interfaz moderna**: diseñada con Tailwind CSS para un estilo limpio y responsive.
+- 
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -24,7 +26,8 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 ### Backend
 - [FastAPI](https://fastapi.tiangolo.com/) – framework rápido y moderno para APIs en Python.  
 - [SQLAlchemy](https://www.sqlalchemy.org/) – ORM para manejar la base de datos.  
-- [SQLite](https://www.sqlite.org/) – base de datos ligera y portable.  
+- [SQLite](https://www.sqlite.org/) – base de datos ligera y portable.
+
 
 ## ⚙️ Instalación y configuración
 
@@ -83,5 +86,6 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 - 📅 Filtros avanzados por fecha y categoría.
 - 👤 Autenticación de usuarios.
 - ☁️ Migración a base de datos PostgreSQL para producción.
+
 
 **💡 Si te gusta este proyecto, ¡no olvides dejar una ⭐ en el repo!**

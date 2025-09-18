@@ -69,13 +69,13 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 ## 📸 Capturas de Pantalla
 
 ### Dashboard
-![Dashboard Screenshot](./Screenshots/dashboard.png)
+![Dashboard Screenshot](./Screenshots/Dashboard.png)
 
 ### Añadir Gasto
-![Add Expense Screenshot](./Screenshots/add.png)
+![Add Expense Screenshot](./Screenshots/Add.png)
 
 ### Estadísticas
-![Stats Screenshot](./Screenshots/stats.png)
+![Stats Screenshot](./Screenshots/Stats.png)
 
 
 ## Próximas mejoras

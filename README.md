@@ -34,8 +34,8 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 ### Backend (FastAPI)
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/gestor-gastos.git
-   cd gestor-gastos/backend
+   git clone https://github.com/sg2lk/expense-tracker.git
+   cd expense-tracker/backend
    ```
    
 2. Crear entorno virtual e instalar dependencias:

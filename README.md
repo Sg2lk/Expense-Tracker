@@ -66,7 +66,16 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
    El frontend estará en: http://localhost:5173 (Vite por defecto).
    ```
    
-## Capturas de pantalla
+## 📸 Capturas de Pantalla
+
+### Dashboard
+![Dashboard Screenshot](./Screenshots/dashboard.png)
+
+### Añadir Gasto
+![Add Expense Screenshot](./Screenshots/add.png)
+
+### Estadísticas
+![Stats Screenshot](./Screenshots/stats.png)
 
 
 ## Próximas mejoras
@@ -75,4 +84,4 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 - 👤 Autenticación de usuarios.
 - ☁️ Migración a base de datos PostgreSQL para producción.
 
-# 💡 Si te gusta este proyecto, ¡no olvides dejar una ⭐ en el repo!
+**💡 Si te gusta este proyecto, ¡no olvides dejar una ⭐ en el repo!**

@@ -1,14 +1,18 @@
 import React from "react";
 import { useExpenses } from './CreateContext';
 
-export default function Dashboard() {
+export default function Dashboard({ searchQuery }) {
   const { expenses, loading } = useExpenses();
 
   if (loading) return <p className="p-5 text-gray-300">Cargando gastos...</p>;
 
+  const filteredExpenses = expenses.filter((expense) =>
+    expense.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="p-5 bg-gray-900">
-      {expenses.length === 0 ? (
+      {filteredExpenses.length === 0 ? (
         <p className="text-gray-300">No expenses found.</p>
       ) : (
         <table className="w-full bg-gray-800 text-gray-200 rounded-lg shadow-md mt-12">
@@ -22,7 +26,7 @@ export default function Dashboard() {
             </tr>
           </thead>
           <tbody>
-            {expenses.map((expense) => (
+            {filteredExpenses.map((expense) => (
               <tr key={expense.id} className="border-b border-gray-900">
                 <td className="py-2 px-4 text-center">{expense.id}</td>
                 <td className="py-2 px-4 text-center">{expense.title}</td>

@@ -19,7 +19,7 @@ export default function Add() {
     try {
       await addExpense({ title, amount: parseFloat(amount), category });
 
-      setMessage({ type: "success", text: "Gasto añadido correctamente" });
+      setMessage({ type: "success", text: "Expense added successfully" });
 
       // Reset form
       setTitle("");
@@ -30,7 +30,7 @@ export default function Add() {
     } catch (error) {
       setMessage({
         type: "error",
-        text: "Error al añadir gasto. Revisa los datos o la conexión.",
+        text: "Error adding expense. Check your data or the connection.",
       });
     } finally {
       setLoading(false);
@@ -70,7 +70,7 @@ export default function Add() {
             disabled={loading}
             className="w-full bg-blue-600 hover:bg-blue-700 transition rounded-lg py-2 font-semibold disabled:opacity-50"
           >
-            {loading ? "Añadiendo..." : "Añadir Gasto"}
+            {loading ? "Adding..." : "Add Expense"}
           </button>
         </form>
       </div>

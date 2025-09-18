@@ -13,7 +13,7 @@ Desarrollada con **React (frontend)**, **FastAPI (backend)** y **SQLite (base de
 - 🗄 **API REST con FastAPI**: endpoints para crear y consultar gastos.  
 - 💾 **Persistencia en SQLite**: almacenamiento local sencillo y ligero.  
 - 🎨 **Interfaz moderna**: diseñada con Tailwind CSS para un estilo limpio y responsive.
-- 
+ 
 
 ## 🛠️ Tecnologías utilizadas
 
